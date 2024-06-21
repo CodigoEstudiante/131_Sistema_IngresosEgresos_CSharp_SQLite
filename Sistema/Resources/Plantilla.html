@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Title of the document</title>
+    <style>
+        table.border {
+            border-collapse: collapse;
+        }
+
+            table.border th {
+                padding: 5px;
+                border: 1px solid black;
+            }
+
+            table.border td {
+                padding: 5px;
+                border: 1px solid black;
+            }
+    </style>
+</head>
+<body>
+    <table class="border" style="width:100%">
+        <thead>
+            <tr style="background-color:#000;color:#fff">
+                <th>Usuario Creacion</th>
+                <th>Fecha Creacion</th>
+                <th>Tipo Registro</th>
+                <th>Fecha Servicio</th>
+                <th>Descripcion Servicio</th>
+                <th>Comentario</th>
+                <th>Documento Cliente</th>
+                <th>Nombre Cliente</th>
+                <th>Tipo Moneda</th>
+                <th>Monto</th>
+            </tr>
+        </thead>
+        <tbody>
+            @filas
+        </tbody>
+    </table>
+</body>
+</html>

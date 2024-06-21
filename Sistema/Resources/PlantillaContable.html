@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Title of the document</title>
+    <style>
+        table.border {
+            border-collapse: collapse;
+        }
+
+            table.border th {
+                padding: 7px;
+                border: 1px solid black;
+            }
+
+            table.border td {
+                padding: 7px;
+                border: 1px solid black;
+            }
+    </style>
+</head>
+<body>
+    <h1>Reporte Contable</h1>
+    <table>
+        <tr>
+            <td><strong>Rango Fecha:</strong> </td>
+            <td>@fechainicio</td>
+            <td><strong>a</strong></td>
+            <td>@fechafin</td>
+            <td></td>
+
+        </tr>
+        <tr>
+            <td colspan="5" style="height:10px"></td>
+        </tr>
+        <tr>
+            <td><strong>Consulta de:</strong> </td>
+            <td>@tiporegistro</td>
+            <td style="width:10px"></td>
+            <td><strong>Tipo Moneda:</strong> </td>
+            <td>@tipomoneda</td>
+        </tr>
+    </table>
+    <hr/>
+    <div style="width:100%;height:15px">
+
+    </div>
+    <table class="border" style="width:100%">
+        <thead>
+            <tr style="background-color:#000;color:#fff">
+                <th>Fecha Servicio</th>
+                <th>Descripcion de Servicio</th>
+                <th>Tipo de Moneda</th>
+                <th>Monto</th>
+            </tr>
+        </thead>
+        <tbody>
+            @filas
+            <tr>
+                <td style="border: 0px !important" colspan="2"></td>
+                <td align="right"><strong>Total:</strong></td>
+                <td>@total</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
