@@ -2,7 +2,7 @@
 
 Codigo fuente para la simulación de un sistema de ingresos y egresos.
 
-Para conocer la funcionalidad del sistema, vea aqui: subiendo...
+Para conocer la funcionalidad del sistema, vea aqui: https://youtu.be/Bbsgd0psS7Y
 
 El proyecto esta desarrollado en .NET Framework 4.6 con SQLite como base de datos.
 
